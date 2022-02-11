@@ -12,6 +12,11 @@
 		- States are allowed to replace themselves (IE: to change the state of the context object to something else), while Strategies are not.
 		- Strategies are passed to the context object as parameters, while States are created by the context object itself.
 		- Strategies only handle a single, specific task, while States provide the underlying implementation for everything (or most everything) the context object does.
+- **Singleton Pattern**
+<br>The concept of Singleton pattern is - a class must ensure that only single instance should be created and single object can be used by all other classes. It is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc. To create Singleton Pattern we basically use-
+	- **Static member :** It gets memory only once because of static, itcontains the instance of the Singleton class.
+	- **Private constructor :** It will prevent to instantiate the Singleton class from outside the class.
+	- **Static factory method :** This provides the global point of access to the Singleton object and returns the instance to the caller.
 
 
 
