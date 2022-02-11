@@ -5,8 +5,8 @@
 Clean code can be summarized as a code that is easily **readable** and **extensible**. It is **focused**, **simple**, **easy to understand**, **testable**. It is a matter of practice and habit. Maintaining **SOLID** principle clean code is more easier to maintain. Using various conventions may lead to a good clean code. Some 
 - **Naming** should be - **searchable**, **pronounceable**, **avoiding noise and irrelevant word**
 	- **Variable naming**
-			- field naming using noun with lowerCamelCase.
-			- public static final fields (constants) with UPPER_SNAKE_CASE
+		- field naming using noun with lowerCamelCase.
+		- public static final fields (constants) with UPPER_SNAKE_CASE
 	- **Method naming**
 		-  should be **verb** which express what the method does.
 	- **Class naming**
@@ -15,13 +15,13 @@ Clean code can be summarized as a code that is easily **readable** and **extensi
 		- use an underscore to separate what's being tested from the specific case being tested. For example:
 		
 - **Method**
-		-  should be **simple**
-		- having **single responsibility**
-		- without **side effects**
+	- should be **simple**
+	- having **single responsibility**
+	- without **side effects**
 		
 - **Consistency**
 consistency should be maintained. for example :
-This is a bad practice which don't maintain any consistency in spacing before and after braces, operator or variables- 
+<br>This is a bad practice which don't maintain any consistency in spacing before and after braces, operator or variables- 
 
 	    if(point>target) {
 	    	 increaseLevel( );
@@ -50,7 +50,7 @@ Some annotations should be documented in Javadoc like this-
 	- @SuppressWarnings - TODO
 	
 - **Brace style** 
-Not recommended in Java but maybe Good Practice for other language :			
+<br>Not recommended in Java but maybe Good Practice for other language :			
 
 	    if ( point > target ) 
 	    		    {
@@ -73,10 +73,10 @@ Not recommended in Java but maybe Good Practice for other language :
 	- exceptions **should not be ignored**
 	- **throwable** is not recommended to use because it includes Error exceptions.
 - **Fewer Arguments**
-Functions should have two or fewer arguments, the fewer the better. 
+<br>Functions should have two or fewer arguments, the fewer the better. 
 - **Avoiding flag or Boolean parameter** as these naturally contradict the principle of single responsibility. it should be considered dividing the function into two.
 - **Limit variable scope** (variable in the innermost block)
-Not recommended :
+<br>Not recommended :
 
 	    int i=0;
 	    
@@ -115,7 +115,7 @@ Not recommended :
 	    b=b+1;
 	    }
 - **Simple statement**
-Not Recommended :
+<br>Not Recommended :
 
 	    number++; position-- ; 
 
@@ -146,7 +146,7 @@ Not Recommended :
 	        } 
 
 - **Wrapping Lines**
-When an expression will not fit on a single line, break it according to these general principles:
+<br>When an expression will not fit on a single line, break it according to these general principles:
 	- Break after a comma.
 	- Break before an operator.
 	- Prefer higher-level breaks to lower-level breaks.
