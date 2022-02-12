@@ -172,7 +172,7 @@ Some annotations should be documented in Javadoc like this-
 	- maintain **lexicographical** order
 	- separated by a blank line between each major grouping (android, com,  junit, net, org, java,  javax)
 - **Treating acronyms and abbreviations as words** 
-Not recommended :
+<br>Not recommended :
 
 	    XMLHTTPRequest,
 
