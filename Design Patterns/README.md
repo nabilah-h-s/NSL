@@ -5,7 +5,7 @@ Design patterns can be divided into three fundamental groups. They are :
 - Structural Design Pattern
 - Behavioral Design Pattern
  ## Creational Design Pattern
- 
+ These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
  - [ ] **Singleton Pattern**
 <br>The concept of Singleton pattern is - a class must ensure that only single instance should be created and single object can be used by all other classes. It is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc. To create Singleton Pattern we basically use-
 	- **Static member :** It gets memory only once because of static, it contains the instance of the Singleton class.
