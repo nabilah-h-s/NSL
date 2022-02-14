@@ -2,7 +2,7 @@
 
 
 ## Clean Code based on Java Convention
-Clean code can be summarized as a code that is easily **readable** and **extensible**. It is **focused**, **simple**, **easy to understand**, **testable**. It is a matter of practice and habit. Maintaining **SOLID** principle clean code is more easier to maintain. Using various conventions may lead to a good clean code. Some 
+Clean code can be summarized as a code that is easily **readable** and **extensible**. It is **focused**, **simple**, **easy to understand**, **testable**. It is a matter of practice and habit. Maintaining **SOLID** principle clean code is more easier to maintain. Using various conventions may lead to a good clean code.  
 - **Naming** should be - **searchable**, **pronounceable**, **avoiding noise and irrelevant word**
 	- **Variable naming**
 		- field naming using noun with lowerCamelCase.
@@ -21,7 +21,8 @@ Clean code can be summarized as a code that is easily **readable** and **extensi
 		
 - **Consistency**
 consistency should be maintained. for example :
-<br>This is a bad practice which don't maintain any consistency in spacing before and after braces, operator or variables- 
+<br>Not maintaining any consistency in spacing before and after braces, operator or variables are bad practices.<br>
+	Not Recommended:
 
 	    if(point>target) {
 	    	 increaseLevel( );
@@ -30,7 +31,7 @@ consistency should be maintained. for example :
 	     if	(	point < requirement	){
 		     showWarningMessage(); 
 		     }
-	good practice :
+	Recommended :
 	
 
 	    if ( point > target ) {
@@ -53,17 +54,17 @@ Some annotations should be documented in Javadoc like this-
 <br>Not recommended in Java but maybe Good Practice for other language :			
 
 	    if ( point > target ) 
-	    		    {
-	    	    	    increaseLevel( );
-	        	    	updateTarget( );
-	        	    }
+	    {
+	    	increaseLevel( );
+	        updateTarget( );
+	    }
 
-	Good practice for Java :
+	Recommended for Java :
 
 	    if ( point > target ) {
-	    	    	    increaseLevel( );
-	        	    	updateTarget( );
-	        	    }
+	    	increaseLevel( );
+	        updateTarget( );
+	    }
 
 - **Repetition**- Duplicate code means change required in multiple places when there is a change in logic and it is very error prone.
 - **Do not leave code in comments**
