@@ -19,11 +19,11 @@ Clean code can be summarized as a code that is easily **readable** and **extensi
 	- having **single responsibility**
 	- without **side effects**
 		
-- **Consistency**
-consistency should be maintained. for example :
-<br>Not maintaining any consistency in spacing before and after braces, operator or variables are bad practices.<br>
-	Not Recommended:
+- **Consistency**  
+Consistency should be maintained. Not maintaining any consistency in spacing before and after braces, operator or variables are bad practices.  
 
+Not Recommended:
+```java
 	    if(point>target) {
 	    	 increaseLevel( );
 	        updateTarget( );
@@ -31,8 +31,9 @@ consistency should be maintained. for example :
 	     if	(	point < requirement	){
 		     showWarningMessage(); 
 		     }
-	Recommended :
-	
+```		     
+Recommended :
+```java	
 
 	    if ( point > target ) {
 	    	   increaseLevel( );
@@ -42,7 +43,7 @@ consistency should be maintained. for example :
 	    if ( point < requirement ) {
 	    	   showWarningMessage( ); 
 	    }
-
+```
 
 - **Annotation** - using annotation is recommended in Java
 Some annotations should be documented in Javadoc like this-
@@ -53,19 +54,19 @@ Some annotations should be documented in Javadoc like this-
 - **Brace style**  
 Not recommended in Java but maybe Good Practice for other language :			
 ```java
-if ( point > target ) 
-{
-	increaseLevel( );
-	updateTarget( );
-}
+	if ( point > target ) 
+	{
+		increaseLevel( );
+		updateTarget( );
+	}
 ```
-	Recommended for Java :
+Recommended for Java :
 
 ```java
-if ( point > target ) {
-	increaseLevel( );
-	updateTarget( );
-}
+	if ( point > target ) {
+		increaseLevel( );
+		updateTarget( );
+	}
 ```
 
 - **Repetition**- Duplicate code means change required in multiple places when there is a change in logic and it is very error prone.
@@ -75,114 +76,122 @@ if ( point > target ) {
 	- **generic** exception should be avoided and catch proper possible exception
 	- exceptions **should not be ignored**
 	- **throwable** is not recommended to use because it includes Error exceptions.
-- **Fewer Arguments**
-<br>Functions should have two or fewer arguments, the fewer the better. 
+- **Fewer Arguments**  
+Functions should have two or fewer arguments, the fewer the better. 
 - **Avoiding flag or Boolean parameter** as these naturally contradict the principle of single responsibility. it should be considered dividing the function into two.
-- **Limit variable scope** (variable in the innermost block)
-<br>Not recommended :
+- **Limit variable scope** (variable in the innermost block)  
+Not recommended :
 
+```java
 	    int i=0;
 	    
 	    while(i<user.length){
-	    //a long calucation
-	    i=i+1;
+	    	//a long calucation
+	    	i=i+1;
 	    }
 	    
 	    int a=0, b=0;
 	    while(a<book.length){
-	    //a long calucation
-	    a=a+1;
+	    	//a long calucation
+	    	a=a+1;
 	    }
 	    while(b<student.length){
-	    //a long calucation
-	    b=b+1;
+	    	//a long calucation
+	    	b=b+1;
 	    }
+```
 
-	Good Practice :		
+Recommended :		
 	    
+```java
 	    int i=0; //user array iterator
 	    while(i<user.length){
-	    //a long calucation
-	    i=i+1;
+	    	//a long calucation
+	    	i=i+1;
 	    }
 	    
 	    int a=0; //book array iterator
 	    while(a<book.length){
-	    //a long calucation
-	    a=a+1;
+	    	//a long calucation
+	    	a=a+1;
 	    }
 
-		int b=0; //student array iterator
+	    int b=0; //student array iterator
 	    while(b<student.length){
-	    //a long calucation
-	    b=b+1;
+	    	//a long calucation
+	    	b=b+1;
 	    }
-- **Simple statement**
-<br>Not Recommended :
+```
+- **Simple statement**  
+Not Recommended :
+```java
+	number++; position-- ;
+```
 
-	    number++; position-- ; 
-
-	Recommended :
-
-		number++; 
-		position-- ; 
+Recommended :
+```java
+	number++; 
+	position-- ; 
+```
 
 - **Limit line length**
 	- Avoid lines longer than 80 characters, since they're not handled well by many terminals and tools.
 	- Examples for use in documentation should have a shorter line length-generally no more than 70 characters.
 
-	Not recommended :
-		
-		if ( ( condition1 && condition2) || ( condition3 && condition4 ) || !( condition5 & condition6 )  || ( condition7 && condition8 ) ) { 
+Not recommended :
+```java		
+	if ( ( condition1 && condition2) || ( condition3 && condition4 ) || !( condition5 & condition6 )  || ( condition7 && condition8 ) ) { 
 					        	    doSomethingAboutIt();          
 					        	}	
+```	
 	
-	
 
-	Good practice : 
-
-		     if ((condition1 && condition2)
-	                || (condition3 && condition4)
-	                ||!(condition5 && condition6)
-	                || ( condition7 & condition8 )) {
-	            doSomethingAboutIt();
-	        } 
-
-- **Wrapping Lines**
-<br>When an expression will not fit on a single line, break it according to these general principles:
+Recommended : 
+```java
+	     if ((condition1 && condition2)
+		|| (condition3 && condition4)
+		||!(condition5 && condition6)
+		|| ( condition7 & condition8 )) {
+	    doSomethingAboutIt();
+	} 
+```
+- **Wrapping Lines**  
+When an expression will not fit on a single line, break it according to these general principles:
 	- Break after a comma.
 	- Break before an operator.
 	- Prefer higher-level breaks to lower-level breaks.
 	- Align the new line with the beginning of the expression at the same level on the previous line.
 	- If the above rules lead to confusing code or to code that's squished up against the right margin, just indent 8 spaces instead.
 
-	Not recommended :
-
+Not recommended :
+```java
 		if ( ( condition1 && condition2) || ( condition3 && condition4 ) || 
 			!( condition5 & condition6 )  || ( condition7 && condition8 ) ) { 
 		    doSomethingAboutIt();            //bad wrap, easy to miss this line
 		} 
-	Good practice : 
-
+```
+Recommended : 
+```java
 	     if ((condition1 && condition2)
 	                || (condition3 && condition4)
 	                ||!(condition5 && condition6)
 	                || ( condition7 & condition8 )) {
 	            doSomethingAboutIt();
 	        } 
+```
 
 - **Order import statements**
 	- maintain **lexicographical** order
 	- separated by a blank line between each major grouping (android, com,  junit, net, org, java,  javax)
-- **Treating acronyms and abbreviations as words** 
-<br>Not recommended :
-
+- **Treating acronyms and abbreviations as words**   
+Not recommended :
+```
 	    XMLHTTPRequest,
-
-	Recommended :
-
+```
+Recommended :
+```
 	    XmlHttpRequest 
-
+```
 
 ### Refactoring
 Refactoring is the process of changing a software system in such a way that it does not alter the function of the code yet improves its internal structure. Sphaghetti codes can be cleaned using refactoring.
