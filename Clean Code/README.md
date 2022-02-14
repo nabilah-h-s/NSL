@@ -40,7 +40,7 @@ consistency should be maintained. for example :
 	    }
 	    
 	    if ( point < requirement ) {
-	    	   showWarningMessage(); 
+	    	   showWarningMessage( ); 
 	    }
 
 
@@ -50,21 +50,23 @@ Some annotations should be documented in Javadoc like this-
 	- @Override - @inheritdocs
 	- @SuppressWarnings - TODO
 	
-- **Brace style** 
-<br>Not recommended in Java but maybe Good Practice for other language :			
-
-	    if ( point > target ) 
-	    {
-	    	increaseLevel( );
-	        updateTarget( );
-	    }
-
+- **Brace style**  
+Not recommended in Java but maybe Good Practice for other language :			
+```java
+if ( point > target ) 
+{
+	increaseLevel( );
+	updateTarget( );
+}
+```
 	Recommended for Java :
 
-	    if ( point > target ) {
-	    	increaseLevel( );
-	        updateTarget( );
-	    }
+```java
+if ( point > target ) {
+	increaseLevel( );
+	updateTarget( );
+}
+```
 
 - **Repetition**- Duplicate code means change required in multiple places when there is a change in logic and it is very error prone.
 - **Do not leave code in comments**
