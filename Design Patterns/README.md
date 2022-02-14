@@ -1,9 +1,9 @@
 # Design patterns
 Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous software developers over quite a substantial period of time.  
 Design patterns can be divided into three fundamental groups. They are :
-- Creational Design Pattern
-- Structural Design Pattern
-- Behavioral Design Pattern
+- [Creational Design Pattern](#creational-design-pattern)
+- [Structural Design Pattern](#structural-design-pattern)
+- [Behavioral Design Pattern](#behavioral-design-pattern)
  ## Creational Design Pattern
  These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
  - [ ] **Singleton Pattern**
