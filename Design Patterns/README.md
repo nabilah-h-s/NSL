@@ -8,7 +8,7 @@ Design patterns can be divided into three fundamental groups. They are :
  # Creational Design Pattern
  These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
  
- ## Singleton Pattern  
+ ## [Singleton Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/singletonPattern/README.md)  
 The concept of Singleton pattern is - a class must ensure that only single instance should be created and single object can be used by all other classes.  
 
 Where to use singleton pattern :  
