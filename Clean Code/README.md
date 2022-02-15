@@ -1,6 +1,6 @@
 ﻿## Clean Code based on Java Convention
 
-Clean code can be summarized as a code that is easily **readable** and **extensible**. It is **focused**, **simple**, **easy to understand**, **testable**. It is a matter of practice and habit. Maintaining **SOLID** principle clean code is more easier to maintain. Using various conventions may lead to a good clean code.
+Clean code can be summarized as a code that is easily **readable** and **extensible**. It is **focused**, **simple**, **easy to understand**, **testable**. It is a matter of practice and habit. Using various conventions may lead to a good clean code.
 
 - **Naming** should be  **searchable**, **pronounceable**, **avoiding noise and irrelevant word**
   - **Variable naming**
