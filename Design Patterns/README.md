@@ -19,13 +19,15 @@ Where to use singleton pattern :
 
  ## [Builder Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/builderPattern/builderPatternExplanation.md)
 The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.  
-The Builder design pattern solves problems like:
+
+The Builder design pattern solves problems like :
 - How can a class (the same construction process) create different representations of a complex object?
 - How can a class that includes creating a complex object be simplified?
 
  ## [Prototype Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/prototypePattern/prototypePatternExplanation.md)
  The Prototype pattern is generally used when we have an instance of the class (prototype) and we'd like to create new objects by just copying the prototype. One of the ways we can implement this pattern in Java is by using the clone() method. To do this, we'd implement the Cloneable interface. When we're trying to clone, we should decide between making a shallow or a deep copy.  
-When to use Prototype Pattern  
+
+When to use Prototype Pattern : 
 - When the process of making an object is expensive or takes a long time.
 - When the client application must be unaware of the creation of an object.
 - When you need to keep the number of classes in your application to a minimum level.
@@ -35,14 +37,17 @@ When to use Prototype Pattern
  In Factory pattern, object can be created without exposing the creation logic to the client and refered to newly created object using a common interface. It defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Factory Method Pattern is also known as Virtual Constructor.  
  In this method, We  rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.  
 
- When to Use Factory Method Design Pattern
+ When to Use Factory Method Design Pattern :
 - When the implementation of an interface or an abstract class is expected to change frequently
 - When the current implementation cannot comfortably accommodate new change
 - When the initialization process is relatively simple, and the constructor only requires a handful of parameters
 
  ## Abstract Factory Pattern
- Abstracr factory pattern describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.  
- The Abstract Factory design pattern solves problems like:
+ Abstract factory pattern describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse. It is similar to Factory pattern and it is a factory of factories. In factory design pattern, a single Factory class returns the different sub-classes based on the input provided and the factory class uses if-else or switch statements to achieve this.
+
+In Abstract Factory pattern, we get rid of if-else block and have a factory class for each sub-class and then an Abstract Factory class that will return the sub-class based on the input factory class.  
+
+ The Abstract Factory design pattern solves problems like :
 - How can an application be independent of how its objects are created?
 - How can a class be independent of how the objects it requires are created?
 - How can families of related or dependent objects be created?
