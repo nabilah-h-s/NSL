@@ -79,7 +79,7 @@ Recommended for Java :
   - exceptions **should not be ignored**
   - **throwable** is not recommended to use because it includes Error exceptions.
 - **Fewer Arguments**  
-  Functions should have two or fewer arguments, the fewer the better.
+  Functions should have fewer arguments, the fewer the better.
 - **Avoiding flag or Boolean parameter** as these naturally contradict the principle of single responsibility. it should be considered dividing the function into two.
 - **Limit variable scope** (variable in the innermost block)  
 
@@ -193,6 +193,7 @@ Recommended :
 ```
 
 - **Order import statements**
+  - import specifically
   - maintain **lexicographical** order
   - separated by a blank line between each major grouping (android, com, junit, net, org, java, javax)
 - **Treating acronyms and abbreviations as words**  
