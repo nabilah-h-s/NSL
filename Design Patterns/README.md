@@ -4,28 +4,37 @@ Design patterns can be divided into three fundamental groups. They are :
 - [Creational Design Pattern](#creational-design-pattern)
 - [Structural Design Pattern](#structural-design-pattern)
 - [Behavioral Design Pattern](#behavioral-design-pattern)
+ 
  # Creational Design Pattern
  These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
+ 
  ## Singleton Pattern  
 The concept of Singleton pattern is - a class must ensure that only single instance should be created and single object can be used by all other classes.  
 
-It is mostly used in multi-threaded and database applications. It is used in logging, caching, thread pools, configuration settings etc. 
+Where to use singleton pattern :  
+- For resources that are expensive to create (like database connection objects)
+- It's good practice to keep all loggers as Singletons which increases performance
+- Classes which provide access to configuration settings for the application
+- Classes that contain resources that are accessed in shared mode
 
-To create Singleton Pattern we basically use-  
-- **Static member :** It gets memory only once because of static, it contains the instance of the Singleton class.
-- **Private constructor :** It will prevent to instantiate the Singleton class from outside the class.
-- **Static factory method :** This provides the global point of access to the Singleton object and returns the instance to the caller.
- 
  ## Builder Pattern
-The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
+The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.  
+The Builder design pattern solves problems like:
+- How can a class (the same construction process) create different representations of a complex object?
+- How can a class that includes creating a complex object be simplified?
 
  ## Prototype Pattern
- The Prototype pattern is generally used when we have an instance of the class (prototype) and we'd like to create new objects by just copying the prototype. One of the ways we can implement this pattern in Java is by using the clone() method. To do this, we'd implement the Cloneable interface. When we're trying to clone, we should decide between making a shallow or a deep copy.
+ The Prototype pattern is generally used when we have an instance of the class (prototype) and we'd like to create new objects by just copying the prototype. One of the ways we can implement this pattern in Java is by using the clone() method. To do this, we'd implement the Cloneable interface. When we're trying to clone, we should decide between making a shallow or a deep copy.  
+When to use Prototype Pattern  
+- When the process of making an object is expensive or takes a long time.
+- When the client application must be unaware of the creation of an object.
+- When you need to keep the number of classes in your application to a minimum level.
+- When the classes are instantiated at runtime.
 
  ## Factory Method Pattern
-* According to GoF(Gang of Four), this pattern  **“defines an interface for creating an object, but let subclasses decide which class to instantiate.**  The Factory method lets  a class defer instantiation to subclasses”.
-* This pattern delegates the responsibility of initializing a class from the client to a particular factory class by creating a type of virtual constructor.
-* To achieve this, we rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.
+ In Factory pattern, object can be created without exposing the creation logic to the client and refered to newly created object using a common interface.  
+ Factory Design Method Pattern defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Factory Method Pattern is also known as Virtual Constructor.  
+ In this method, We  rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.
 
  ## Abstract Factory Pattern
  Abstracr factory pattern describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.  
@@ -38,7 +47,7 @@ The builder pattern is a design pattern designed to provide a flexible solution 
 # Structural Design Pattern
 ## Facade Pattern
 A facade is a wrapper class that encapsulate the subsystem in order to hide the subsystem's complexity.  
-The facade design pattern 
+The facade design pattern -
 - is a means to hide the complexity of a subsystem by encapsulating it behind a unifying wrapper called a facade class
 - removes the need for client classes to manage a subsystem on their own, resulting in less coupling between the subsystem and the client classes
 - handles instantiation and redirection of tasks to the appropriate class within the subsystem; provides client classes with a simplified interface for the subsystem
