@@ -11,7 +11,7 @@ Clean code can be summarized as a code that is easily **readable** and **extensi
   - **Class naming**
     - using UpperCamelCase
   - **Javatests naming**
-    - use an underscore to separate what's being tested from the specific case being tested. For example:
+    - use an underscore to separate what's being tested from the specific case being tested.
 - **Method**
   - should be **simple**
   - having **single responsibility**
