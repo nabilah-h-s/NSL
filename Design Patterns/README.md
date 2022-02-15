@@ -8,7 +8,7 @@ Design patterns can be divided into three fundamental groups. They are :
  # Creational Design Pattern
  These design patterns provide a way to create objects while hiding the creation logic, rather than instantiating objects directly using new operator. This gives program more flexibility in deciding which objects need to be created for a given use case.
  
- ## [Singleton Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/singletonPattern/README.md)  
+ ## [Singleton Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/singletonPattern/singletonPatternExplanation.md)  
 The concept of Singleton pattern is - a class must ensure that only single instance should be created and single object can be used by all other classes.  
 
 Where to use singleton pattern :  
@@ -23,7 +23,7 @@ The Builder design pattern solves problems like:
 - How can a class (the same construction process) create different representations of a complex object?
 - How can a class that includes creating a complex object be simplified?
 
- ## Prototype Pattern
+ ## [Prototype Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/prototypePattern/prototypePatternExplanation.md)
  The Prototype pattern is generally used when we have an instance of the class (prototype) and we'd like to create new objects by just copying the prototype. One of the ways we can implement this pattern in Java is by using the clone() method. To do this, we'd implement the Cloneable interface. When we're trying to clone, we should decide between making a shallow or a deep copy.  
 When to use Prototype Pattern  
 - When the process of making an object is expensive or takes a long time.
@@ -57,8 +57,6 @@ The facade design pattern -
 - handles instantiation and redirection of tasks to the appropriate class within the subsystem; provides client classes with a simplified interface for the subsystem
 - acts simply as a point of entry to a subsystem and does not add more functionality to the subsystem.
 # Behavioral Design Pattern
-
-	
 
  ## Observer pattern
 This pattern is a one-to-many dependency between objects so that when one object changes state, all its dependents are notified. This is typically done by calling one of their methods.
