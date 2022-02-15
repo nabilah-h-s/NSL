@@ -44,3 +44,9 @@ Both the patterns are pretty similar in practice, and the defining difference be
 * Strategies are passed to the context object as parameters, while States are created by the context object itself.
 * Strategies only handle a single, specific task, while States provide the underlying implementation for everything (or most   
 everything) the context object does.
+
+## Reference :
+- [The 3 Types of Design Patterns All Developers Should Know](https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/)
+- [Introduction to Creational Design Patterns](https://www.baeldung.com/creational-design-patterns)
+- [Structural Patterns in Core Java](https://www.baeldung.com/java-core-structural-patterns)
+- [Behavioral Patterns in Core Java](https://www.baeldung.com/java-behavioral-patterns-jdk)
