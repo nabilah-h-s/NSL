@@ -17,7 +17,7 @@ Where to use singleton pattern :
 - Classes which provide access to configuration settings for the application
 - Classes that contain resources that are accessed in shared mode
 
- ## Builder Pattern
+ ## [Builder Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/builderPattern/builderPatternExplanation.md)
 The builder pattern is a design pattern designed to provide a flexible solution to various object creation problems in object-oriented programming. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.  
 The Builder design pattern solves problems like:
 - How can a class (the same construction process) create different representations of a complex object?
