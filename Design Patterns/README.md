@@ -49,13 +49,28 @@ When to use Prototype Pattern
 
 
 # Structural Design Pattern
+Structural design patterns are those that simplify the design of large object structures by identifying relationships between them. They describe common ways of composing classes and objects so that they become repeatable as solutions.  
+
+## Adapter Pattern
+
+## Bridge Pattern
+
+## Composite Pattern
+
+## Proxy Pattern
+
+## Decorator Pattern
+
 ## Facade Pattern
 A facade is a wrapper class that encapsulate the subsystem in order to hide the subsystem's complexity.  
 The facade design pattern -
 - is a means to hide the complexity of a subsystem by encapsulating it behind a unifying wrapper called a facade class
 - removes the need for client classes to manage a subsystem on their own, resulting in less coupling between the subsystem and the client classes
 - handles instantiation and redirection of tasks to the appropriate class within the subsystem; provides client classes with a simplified interface for the subsystem
-- acts simply as a point of entry to a subsystem and does not add more functionality to the subsystem.
+- acts simply as a point of entry to a subsystem and does not add more functionality to the subsystem.  
+
+## Flyweight Pattern
+
 # Behavioral Design Pattern
 
  ## Observer pattern
