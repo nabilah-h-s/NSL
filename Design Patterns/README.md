@@ -31,7 +31,7 @@ When to use Prototype Pattern
 - When you need to keep the number of classes in your application to a minimum level.
 - When the classes are instantiated at runtime.
 
- ## Factory Method Pattern
+ ## [Factory Method Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/factoryMethodPattern/factoryMethodPatternExample.md)
  In Factory pattern, object can be created without exposing the creation logic to the client and refered to newly created object using a common interface. It defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Factory Method Pattern is also known as Virtual Constructor.  
  In this method, We  rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.  
 
