@@ -32,9 +32,13 @@ When to use Prototype Pattern
 - When the classes are instantiated at runtime.
 
  ## Factory Method Pattern
- In Factory pattern, object can be created without exposing the creation logic to the client and refered to newly created object using a common interface.  
- Factory Design Method Pattern defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Factory Method Pattern is also known as Virtual Constructor.  
- In this method, We  rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.
+ In Factory pattern, object can be created without exposing the creation logic to the client and refered to newly created object using a common interface. It defines an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. Factory Method Pattern is also known as Virtual Constructor.  
+ In this method, We  rely on a factory which provides us with the objects, hiding the actual implementation details. The created objects are accessed using a common interface.  
+
+ When to Use Factory Method Design Pattern
+- When the implementation of an interface or an abstract class is expected to change frequently
+- When the current implementation cannot comfortably accommodate new change
+- When the initialization process is relatively simple, and the constructor only requires a handful of parameters
 
  ## Abstract Factory Pattern
  Abstracr factory pattern describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.  
@@ -77,8 +81,4 @@ Both the patterns are pretty similar in practice, and the defining difference be
 - [Introduction to Creational Design Patterns](https://www.baeldung.com/creational-design-patterns)
 - [Structural Patterns in Core Java](https://www.baeldung.com/java-core-structural-patterns)
 - [Behavioral Patterns in Core Java](https://www.baeldung.com/java-behavioral-patterns-jdk)
-
-
-## Draft guideline
-
- - **Factory Method Pattern** vs **Abstract Factory Pattern**
+- [Java design patterns - example tutorial](https://www.journaldev.com/1827/java-design-patterns-example-tutorial)
