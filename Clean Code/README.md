@@ -165,7 +165,12 @@ Recommended :
 ```
 
 - **Wrapping Lines**  
-  When an expression will not fit on a single line, break it according to these general principles: - Break after a comma. - Break before an operator. - Prefer higher-level breaks to lower-level breaks. - Align the new line with the beginning of the expression at the same level on the previous line. - If the above rules lead to confusing code or to code that's squished up against the right margin, just indent 8 spaces instead.
+  When an expression will not fit on a single line, break it according to these general principles: 
+  - Break after a comma. 
+  - Break before an operator. 
+  - Prefer higher-level breaks to lower-level breaks. 
+  - Align the new line with the beginning of the expression at the same level on the previous line. 
+  - If the above rules lead to confusing code or to code that's squished up against the right margin, just indent 8 spaces instead.
 
 Not recommended :
 
@@ -191,16 +196,17 @@ Recommended :
   - maintain **lexicographical** order
   - separated by a blank line between each major grouping (android, com, junit, net, org, java, javax)
 - **Treating acronyms and abbreviations as words**  
-  Not recommended :
+
+Not recommended :
 
 ```
-	    XMLHTTPRequest,
+	    getCustomerID
 ```
 
 Recommended :
 
 ```
-	    XmlHttpRequest
+	    getCustomerId
 ```
 
 - **Refactoring**  
