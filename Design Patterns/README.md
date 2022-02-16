@@ -56,7 +56,13 @@ In Abstract Factory pattern, we get rid of if-else block and have a factory clas
 # Structural Design Pattern
 Structural design patterns are those that simplify the design of large object structures by identifying relationships between them. They describe common ways of composing classes and objects so that they become repeatable as solutions.  
 
-## Adapter Pattern
+## [Adapter Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/adapterPattern/adapterPatternExplanation.md)
+An Adapter pattern acts as a connector between two incompatible interfaces that otherwise cannot be connected directly. An Adapter wraps an existing class with a new interface so that it becomes compatible with the client’s interface.
+
+### When to use :
+- When an outside component provides captivating functionality that we'd like to reuse, but it's incompatible with our current application. A suitable Adapter can be developed to make them compatible with each other.
+- When our application is not compatible with the interface that our client is expecting.
+- When we want to reuse legacy code in our application without making any modification in the original code.
 
 ## Bridge Pattern
 
