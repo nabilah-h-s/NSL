@@ -59,7 +59,7 @@ Structural design patterns are those that simplify the design of large object st
 ## [Adapter Pattern](https://github.com/haliban25/NSL/blob/main/Design%20Patterns/adapterPattern/adapterPatternExplanation.md)
 An Adapter pattern acts as a connector between two incompatible interfaces that otherwise cannot be connected directly. An Adapter wraps an existing class with a new interface so that it becomes compatible with the client’s interface.
 
-### When to use :
+When to use :
 - When an outside component provides captivating functionality that we'd like to reuse, but it's incompatible with our current application. A suitable Adapter can be developed to make them compatible with each other.
 - When our application is not compatible with the interface that our client is expecting.
 - When we want to reuse legacy code in our application without making any modification in the original code.
@@ -83,6 +83,7 @@ The facade design pattern -
 ## Flyweight Pattern
 
 # Behavioral Design Pattern
+These patterns are designed depending on how one class communicates with others.
 
  ## Observer pattern
 This pattern is a one-to-many dependency between objects so that when one object changes state, all its dependents are notified. This is typically done by calling one of their methods.
@@ -91,7 +92,7 @@ This pattern is a one-to-many dependency between objects so that when one object
 The state pattern encapsulates the various states a machine can be in, and allows an object to alter its behavior when its internal state changes. 
 
 ## Strategy pattern
-this pattern enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use
+This pattern enables selecting an algorithm at runtime. Instead of implementing a single algorithm directly, code receives run-time instructions as to which in a family of algorithms to use
 
 - **State Pattern** vs **Strategy Pattern**  
 Both the patterns are pretty similar in practice, and the defining difference between them tends to vary. Some popular choices are:
