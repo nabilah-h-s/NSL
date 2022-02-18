@@ -107,25 +107,39 @@ Not recommended :
 Recommended :
 
 ```java
-	    int i=0; //user array iterator
-	    while(i<user.length){
-	    	//a long calucation
-	    	i=i+1;
+	    int iteratorUsers=0;
+	    while(iteratorUsers<user.length){
+	    	//a long calucation  	
+			iteratorUsers=iteratorUsers+1;
 	    }
 
-	    int a=0; //book array iterator
-	    while(a<book.length){
+	    int iteratorBooks=0; 
+	    while(iteratorBooks<book.length){
 	    	//a long calucation
-	    	a=a+1;
+	    	iteratorBooks=iteratorBooks+1;
 	    }
 
-	    int b=0; //student array iterator
-	    while(b<student.length){
+	    int iteratorStudents=0;
+	    while(iteratorStudents<student.length){
 	    	//a long calucation
-	    	b=b+1;
+	    	iteratorStudents=iteratorStudents+1;
 	    }
 ```
 
+Better Approach :
+```java
+for (iteratorUsers : user){
+	//a long calucation
+}
+
+for (iteratorBooks : book){
+	//a long calucation
+}
+
+for (iteratorStudents : student){
+	//a long calucation
+}
+```
 - **Simple statement**  
 
 Not Recommended :
