@@ -131,5 +131,6 @@ public class PrototypePattern {
 
 ## References :
 - [Prototype Pattern in Java](https://www.baeldung.com/java-pattern-prototype)
+- [Prototype Pattern in Java (JournalDev)](https://www.journaldev.com/1440/prototype-design-pattern-in-java)
 - [Java clone – deep and shallow copy ](https://howtodoinjava.com/java/cloning/a-guide-to-object-cloning-in-java/)
 - [Marker Interfaces in Java](https://www.baeldung.com/java-marker-interfaces)
