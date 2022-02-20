@@ -14,5 +14,3 @@ We can break the pattern down into:
 - client – has access to the composition elements by using the base component object.
 
 ## Example Code :
-```java
-```
