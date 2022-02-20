@@ -67,6 +67,11 @@ When to use :
 ## Bridge Pattern
 
 ## Composite Pattern
+The composite pattern is meant to allow treating individual objects and compositions of objects, or “composites” in the same way. It can be viewed as a tree structure made up of types that inherit a base type, and it can represent a single part or a whole hierarchy of objects.
+
+When to use :
+- When we want to represent part-whole hierarchies of objects.
+- When we want clients to be able to ignore the difference between compositions of objects and individual objects. Clients will treat all objects in the composite structure uniformly.
 
 ## Proxy Pattern
 
