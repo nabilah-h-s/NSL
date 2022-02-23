@@ -123,7 +123,6 @@ class SimpleRemoteControl
 }
 ```
 ```java
-// Driver class
 class RemoteControlTest
 {
 	public static void main(String[] args)
