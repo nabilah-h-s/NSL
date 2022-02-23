@@ -1,4 +1,5 @@
-## command
+## command Design Pattern
+Example code for Home device Control
 ```java
 interface Command
 {
