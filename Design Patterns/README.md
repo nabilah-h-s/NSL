@@ -106,6 +106,9 @@ Both the patterns are pretty similar in practice, and the defining difference be
 * Strategies are passed to the context object as parameters, while States are created by the context object itself.
 * Strategies only handle a single, specific task, while States provide the underlying implementation for everything (or most everything) the context object does.
 
+For more, you can visit-
+[Presentation Slide on Prototype, Composite, Command Pattern](https://docs.google.com/presentation/d/1eL7TUoQ2u2C4-trmQxpP5H4fiE8xhB2jBz-ecgnBkbo/edit?usp=sharing)  
+
 ## Reference :
 - [The 3 Types of Design Patterns All Developers Should Know](https://www.freecodecamp.org/news/the-basic-design-patterns-all-developers-need-to-know/)
 - [Introduction to Creational Design Patterns](https://www.baeldung.com/creational-design-patterns)
