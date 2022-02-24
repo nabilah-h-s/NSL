@@ -1,10 +1,43 @@
 # Project Management
 ## Requirements analysis
+- functional
+- non functional
+------------------
+- business requirement
+- software requirement
+
+Techniques for Identifying Software Requirements
+- Data Flow Diagram
+- Use Cases
+- User Stories
+
+
 ## Task breakdown
 ## Effort estimation
+- time it will take to complete that task
+
+**Three-Point Method**  
+This method loops in the best-case scenario, the worst-case scenario, and the most likely scenario. The average of all these estimates is then calculated to give us the final estimate.
+
+In this method, the team needs to measure time/effort based on the following parameters:
+
+- Optimistic Value (O): How much time/effort will it take if everything is on track?
+- Pessimist Value (P): How much time/effort will it take if things fall apart or there are impediments on the way?
+- Most Likely Value (M): What is the most likely and practical estimate to complete the task?
+----------------
+
+**Who is Involved in Agile Estimation Activity?**  
+Agile development team should be involved. reasons-
+- Everyone should be involved to ensure they know the user story demands and the corresponding estimation.
+- To avoid underestimation or overestimation.
 
 ## Task prioritization (use case, multiple overlapping tasks)
-
+**MoSCoW method** segments features based on 
+- must-haves, 
+- should-haves, 
+- could-haves 
+- won’t-haves.
+-----------------------
 - Write everything down: Personal and work tasks should be captured in one place.
 - Evaluate long-term goals: Consider your larger long-term goals, and the work you need to do to reach them. 
 - Break down larger goals: To understand how to achieve your long-term goals, break them down into yearly, monthly, and weekly achievements. 
@@ -66,3 +99,4 @@ Project starts 2022-02-07
 - [requirement analysis- visual paradigm](https://www.visual-paradigm.com/guide/requirements-gathering/requirement-analysis-techniques/#:~:text=Requirement%20Analysis%2C%20also%20known%20as,requirements%20gathering%20or%20requirements%20capturing.)
 - [Flowchart vs Activity diagram](https://pediaa.com/what-is-the-difference-between-activity-diagram-and-flowchart/)
 - [Task Prioritization](https://www.wework.com/ideas/professional-development/creativity-culture/how-to-prioritize-work#:~:text=Thoughtful%20prioritization%20typically%20involves%20creating,tasks%20for%20urgent%20must%2Ddos.)
+- [Task Prioritization in agile](https://www.netsolutions.com/insights/how-to-estimate-projects-in-agile/)
