@@ -53,24 +53,20 @@ A timeline is a representation of a list of events in sequential order. It is ty
 
 In contrast, a Gantt chart is a graphic/visual representation of your project timeline that gives project tasks related to time. Specific tasks are represented as horizontal bars, and the length of the bar designates how long that task is assumed to take.
 
-```plantuml
-@startuml
-[Clean code] lasts 7 days
-[Software Design Pattern] lasts 10 days
-[Spring] lasts 4 days
-[Project Management] lasts 9 days
-
-
-Project starts 2022-02-07
-[Clean code] ends 2022-02-14
-[Software Design Pattern] ends 2022-02-22
-[Spring] ends 2022-02-23
-[Project Management] ends 2022-03-03
-
-@enduml
-
-@endgantt
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat  DD-MM-YYYY
+    section Week Resolution
+    Clean Code           :a1, 07-02-2022, 5d
+    Assigned Software Design Patterns     : 16-02-2022  , 6d
+    Project Management : 4d
+    section Parallel knowledge gathering
+    Remaining Software Design Patterns      : 09-02-2022  , 10d
+    JPA,ORM,Hibernate      : active, 24-02-2022 , 3d
 ```
+
+
 -------------------------
 
 ## UML diagram
@@ -94,6 +90,8 @@ Project starts 2022-02-07
 - [Monday.com](https://monday.com/)
 - [UML diagram tool - creately](https://creately.com/lp/uml-diagram-tool/)
 
+## Diagram tool Mermaid syntax
+- https://mermaid-js.github.io/mermaid/#/
 
 ## Reference
 - [requirement analysis- visual paradigm](https://www.visual-paradigm.com/guide/requirements-gathering/requirement-analysis-techniques/#:~:text=Requirement%20Analysis%2C%20also%20known%20as,requirements%20gathering%20or%20requirements%20capturing.)
