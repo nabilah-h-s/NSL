@@ -6,9 +6,14 @@ Objects which will be saved to database is called entity. anotated by @Entities.
 JPA- The Java Persistence API (JPA) is a specification of Java. It is used to persist data between Java object and relational database. 
 JPA acts as a bridge between object-oriented domain models and relational database systems. As JPA is just a specification, it doesn't perform any operation by itself.
 
-Some keywords to explore more-
+Annotations-
 - @Id
-- Entity
+- @Entity
+- @Table
+- @Column
+- @Transient
+
+Some keywords to explore more-
 - EntityManager
 - EntityManagerFactory
 - Persistence class
