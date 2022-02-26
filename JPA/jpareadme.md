@@ -6,6 +6,20 @@ Objects which will be saved to database is called entity. anotated by @Entities.
 JPA- The Java Persistence API (JPA) is a specification of Java. It is used to persist data between Java object and relational database. 
 JPA acts as a bridge between object-oriented domain models and relational database systems. As JPA is just a specification, it doesn't perform any operation by itself.
 
+Hibernate Lifecycle-
+```mermaid
+stateDiagram-v2
+  [*]-->transient : new()
+  transient-->persistance
+  [*]-->persistance : get() <br/> load()
+  persistance-->ditached : ditach() <br/> close() <br/> clear() <br/> evict()
+  ditached-->persistance : save() <br/> saveOrUpdate() <br/> merge() <br/> lock()
+  transient-->[*] : garbage
+  persistance-->removed : delete()
+  removed-->[*] : garbage 
+  ditached-->[*] : garbage
+```
+
 Annotations-
 - @Id
 - @Entity
