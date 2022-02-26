@@ -21,4 +21,6 @@ Spring initializer
 https://www.geeksforgeeks.org/spring-initializr/#:~:text=Spring%20Initializr%20is%20a%20Web,the%20Spring%20Boot%20project%20structure.&text=The%20Spring%20Initializr%20tool%20takes,added%20based%20on%20the%20version).
 
 ORM- object relational mapping  
+ORM stands for Object-Relational Mapping (ORM) is a programming technique for converting data between relational databases and object oriented programming languages such as Java, C#, etc.
 https://docs.spring.io/spring-framework/docs/2.5.x/reference/orm.html
+https://www.tutorialspoint.com/hibernate/orm_overview.htm
