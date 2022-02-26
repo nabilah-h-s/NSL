@@ -10,12 +10,12 @@ Hibernate Lifecycle-
 ```mermaid
 stateDiagram-v2
   [*]-->transient : new()
-  transient-->persistance
-  [*]-->persistance : get() <br/> load()
-  persistance-->ditached : ditach() <br/> close() <br/> clear() <br/> evict()
-  ditached-->persistance : save() <br/> saveOrUpdate() <br/> merge() <br/> lock()
+  transient-->persistent
+  [*]-->persistent : get() <br/> load()
+  persistent-->ditached : ditach() <br/> close() <br/> clear() <br/> evict()
+  ditached-->persistent : save() <br/> saveOrUpdate() <br/> merge() <br/> lock()
   transient-->[*] : garbage
-  persistance-->removed : delete()
+  persistent-->removed : delete()
   removed-->[*] : garbage 
   ditached-->[*] : garbage
 ```
