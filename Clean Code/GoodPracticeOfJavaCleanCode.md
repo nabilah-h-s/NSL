@@ -50,6 +50,7 @@ Recommended :
   - @Deprecated- @deprecated (Javadoc) 
   - @Override - @inheritdocs 
   - @SuppressWarnings - TODO
+  
 - **Brace style**  
 
 Not recommended in Java but maybe Good Practice for other language :
