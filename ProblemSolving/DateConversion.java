@@ -6,7 +6,7 @@ public class DateConversion {
 
 	public static void main(String[] args) {
 		ArrayList<String> desiredDate = new ArrayList<String>();
-		;
+		
 		String[] weekend = { "01-01-2022 00:00:00", "01-02-2022 00:00:00", "01-08-2022 00:00:00", "01-09-2022 00:00:00",
 				"01-15-2022 00:00:00", "01-16-2022 00:00:00", "01-22-2022 00:00:00", "01-23-2022 00:00:00",
 				"01-29-2022 00:00:00", "01-30-2022 00:00:00", "02-05-2022 00:00:00", "02-06-2022 00:00:00",
@@ -34,15 +34,19 @@ public class DateConversion {
 				"12-03-2022 00:00:00", "12-04-2022 00:00:00", "12-10-2022 00:00:00", "12-11-2022 00:00:00",
 				"12-17-2022 00:00:00", "12-18-2022 00:00:00", "12-24-2022 00:00:00", "12-25-2022 00:00:00",
 				"12-31-2022 00:00:00" };
-		for (String date : weekend) {
-			StringBuffer temp = new StringBuffer();
-
-			temp.append(date.charAt(6)).append(date.charAt(7)).append(date.charAt(8)).append(date.charAt(9));
-			temp.append(date.charAt(5)).append(date.charAt(3)).append(date.charAt(4));
-			temp.append(date.charAt(2)).append(date.charAt(0)).append(date.charAt(1));
-			desiredDate.add(temp.toString());
-		}		
+		desiredDate=reverseDateFormat(weekend);		
 		System.out.println(desiredDate);
 
+	}
+	public static ArrayList<String> reverseDateFormat(String[] weekend) {
+		ArrayList<String> desiredDate = new ArrayList<String>();
+		for (String date : weekend) {
+			StringBuffer temp = new StringBuffer();
+			temp.append(date.charAt(6)).append(date.charAt(7)).append(date.charAt(8)).append(date.charAt(9));
+			temp.append(date.charAt(2)).append(date.charAt(0)).append(date.charAt(1));
+			temp.append(date.charAt(5)).append(date.charAt(3)).append(date.charAt(4));
+			desiredDate.add(temp.toString());
+		}		
+		return desiredDate;
 	}
 }
