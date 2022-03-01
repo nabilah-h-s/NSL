@@ -35,9 +35,12 @@ public class DateConversion {
 				"12-17-2022 00:00:00", "12-18-2022 00:00:00", "12-24-2022 00:00:00", "12-25-2022 00:00:00",
 				"12-31-2022 00:00:00" };
 		for (String date : weekend) {
-			String[] splittedDate = date.split(" ");
-			desiredDate.add(splittedDate[0]);
+			StringBuffer temp = new StringBuffer();
 
+			temp.append(date.charAt(9)).append(date.charAt(8)).append(date.charAt(7)).append(date.charAt(6));
+			temp.append(date.charAt(5)).append(date.charAt(3)).append(date.charAt(4));
+			temp.append(date.charAt(2)).append(date.charAt(0)).append(date.charAt(1));
+			desiredDate.add(temp.toString());
 		}		
 		System.out.println(desiredDate);
 
