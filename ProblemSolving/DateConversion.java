@@ -37,7 +37,7 @@ public class DateConversion {
 		for (String date : weekend) {
 			StringBuffer temp = new StringBuffer();
 
-			temp.append(date.charAt(9)).append(date.charAt(8)).append(date.charAt(7)).append(date.charAt(6));
+			temp.append(date.charAt(6)).append(date.charAt(7)).append(date.charAt(8)).append(date.charAt(9));
 			temp.append(date.charAt(5)).append(date.charAt(3)).append(date.charAt(4));
 			temp.append(date.charAt(2)).append(date.charAt(0)).append(date.charAt(1));
 			desiredDate.add(temp.toString());
