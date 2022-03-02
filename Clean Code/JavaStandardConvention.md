@@ -1,3 +1,19 @@
+# Table of Content
+- [Table of Content](#table-of-content)
+- [Variable](#variable)
+- [Method](#method)
+- [Class](#class)
+- [Braces](#braces)
+- [Line Formatting](#line-formatting)
+	- [Indentation](#indentation)
+	- [Line Length](#line-length)
+	- [Wrapping Lines](#wrapping-lines)
+	- [Blank Lines](#blank-lines)
+	- [Blank Spaces](#blank-spaces)
+- [Comments](#comments)
+	- [Implementation Comment Formats](#implementation-comment-formats)
+	- [Documentation Comments](#documentation-comments)
+- [Example Code](#example-code)
 # Variable
 - Name should be noun
 - Pronounceable
