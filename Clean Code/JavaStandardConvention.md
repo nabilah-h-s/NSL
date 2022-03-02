@@ -1,5 +1,4 @@
-# Table of Content
-- [Table of Content](#table-of-content)
+## Table of Content
 - [Variable](#variable)
 - [Method](#method)
 - [Class](#class)
@@ -14,7 +13,7 @@
 	- [Implementation Comment Formats](#implementation-comment-formats)
 	- [Documentation Comments](#documentation-comments)
 - [Example Code](#example-code)
-# Variable
+## Variable
 - Name should be noun
 - Pronounceable
 - Avoiding noise and irrelevant word
@@ -32,7 +31,7 @@
 - Do not use embedded assignments in an attempt to improve run-time performance
 
 
-# Method
+## Method
 - Should be verbs
 - lowerCamelCase
 - Methods are separated by a blank line
@@ -41,7 +40,7 @@
 - Exceptions should not be ignored
 - Throwable is not recommended to use because it includes Error exceptions.
 
-# Class   
+## Class   
 Should be 
 - Nouns 
 - UpperCamelCase 
@@ -51,7 +50,7 @@ Should be
 - Don’t make any instance or class variable public without good reason
 - Avoid using an object to access a class (static) variable or method
  
-# Braces
+## Braces
 - No space between a method name and the parenthesis “(“ starting its parameter list
 - Open brace “{” appears at the end of the same line as the declaration statement
 - Closing brace “}” starts a line by itself indented to match its corresponding opening statement, except when it is a null statement the “}” should appear immediately after the “{“
@@ -59,12 +58,12 @@ Should be
 - It is generally a good idea to use parentheses liberally in expressions involving mixed operators
 to avoid operator precedence problems. 
 
-# Line Formatting
-## Indentation
+## Line Formatting
+### Indentation
 Four spaces should be used as the unit of indentation. The exact construction of the indentation (spaces vs. tabs) is unspecified. Tabs must be set exactly every 8 spaces.
-## Line Length  
+### Line Length  
 Avoid lines longer than 80 characters
-## Wrapping Lines  
+### Wrapping Lines  
 Wrapping lines should be according to these general principles:    
 - Break after a comma.
 - Break before an operator.
@@ -73,7 +72,7 @@ Wrapping lines should be according to these general principles:
 - If the above rules lead to confusing code or to code that’s squished up against the right
 margin, just indent 8 spaces instead.
 
-## Blank Lines  
+### Blank Lines  
 Blank lines improve readability by setting off sections of code that are logically related.
 Two blank lines should always be used in the following circumstances:  
 - Between sections of a source file
@@ -82,7 +81,7 @@ One blank line should always be used in the following circumstances:
 - Between methods
 - Between the local variables in a method and its first statement
 - Before a block or single-line comment
-## Blank Spaces
+### Blank Spaces
 Blank spaces should be used in the following circumstances:
 - A keyword followed by a parenthesis should be separated by a space.
 Note that a blank space should not be used between a method name and its opening
@@ -93,8 +92,8 @@ parenthesis. This helps to distinguish keywords from method calls.
 - The expressions in a for statement should be separated by blank spaces. 
 - Casts should be followed by a blank.
 
-# Comments
-## Implementation Comment Formats
+## Comments
+### Implementation Comment Formats
 - Block Comments - A block comment should be preceded by a blank line to set it apart from the rest of the code.  Block comments have an asterisk “*” at the beginning of each line except the first.
 ```java
 /*
@@ -111,7 +110,7 @@ parenthesis. This helps to distinguish keywords from method calls.
 ```
 - Use XXX in a comment to flag something that is bogus but works. 
 - Use FIXME to flag something that is bogus and broken.
-## Documentation Comments
+### Documentation Comments
 Doc comments describe Java classes, interfaces, constructors, methods, and fields. Each doc
 comment is set inside the comment delimiters /**...*/, with one comment per API. This
 comment should appear just before the declaration:
@@ -128,7 +127,7 @@ class Example { ...
   - @Override - @inheritdocs 
   - @SuppressWarnings - TODO
 
-# Example Code
+## Example Code
 ```java
 package prototypePattern;
 
